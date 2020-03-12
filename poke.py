@@ -2,7 +2,7 @@
 import random 
 import sys
 
-
+#create the Trainer class which handles the pokedex and trainer's name
 class Trainer:
     pokedex = []
 
@@ -12,7 +12,7 @@ class Trainer:
     def add_pokemon(self, pokemon):
         self.pokedex.append(pokemon)
 
-
+# create the Pokemon class which handles each pokemon and their attributes
 class Pokemon:
     def __init__(self, name, element, weakness, attacks):
         self.name = name 
@@ -35,96 +35,88 @@ squirtle = Pokemon(
     attacks = [{'name': 'water gun', 'type': 'water'}, {'name': 'tackle', 'type': 'normal'}],
 )
 
-bulbasaur = Pokemon(
-    name = 'Bulbasaur',
-    element = 'grass',
-    weakness = 'fire',
-    attacks = [{'name': 'vine whip', 'type': 'grass'}, {'name': 'tackle', 'type': 'normal'}],   
-)
+# bulbasaur = Pokemon(
+#     name = 'Bulbasaur',
+#     element = 'grass',
+#     weakness = 'fire',
+#     attacks = [{'name': 'vine whip', 'type': 'grass'}, {'name': 'tackle', 'type': 'normal'}],   
+# )
 
-flareon = Pokemon(
-    name = 'Flareon',
-    element = 'fire',
-    weakness = 'water',
-    attacks = [{'name': 'ember', 'type': 'fire'}, {'name': 'tackle', 'type': 'normal'}],
+# flareon = Pokemon(
+#     name = 'Flareon',
+#     element = 'fire',
+#     weakness = 'water',
+#     attacks = [{'name': 'ember', 'type': 'fire'}, {'name': 'tackle', 'type': 'normal'}],
     
-)
+# )
 
-vaporeon = Pokemon(
-    name = 'Vaporeon',
-    element = 'water',
-    weakness = 'grass',
-    attacks = [{'name': 'water gun', 'type': 'water'}, {'name': 'tackle', 'type': 'normal'}],
+# vaporeon = Pokemon(
+#     name = 'Vaporeon',
+#     element = 'water',
+#     weakness = 'grass',
+#     attacks = [{'name': 'water gun', 'type': 'water'}, {'name': 'tackle', 'type': 'normal'}],
     
-)
+# )
 
-leafeon = Pokemon(
-    name = 'Leafeon',
-    element = 'grass',
-    weakness = 'fire',
-    attacks = [{'name': 'vine whip', 'type': 'grass'}, {'name': 'tackle', 'type': 'normal'}],
+# leafeon = Pokemon(
+#     name = 'Leafeon',
+#     element = 'grass',
+#     weakness = 'fire',
+#     attacks = [{'name': 'vine whip', 'type': 'grass'}, {'name': 'tackle', 'type': 'normal'}],
     
-)
+# )
 
-ivysaur = Pokemon(
-    name = 'Ivysaur',
-    element = 'grass',
-    weakness = 'fire',
-    attacks = [{'name': 'vine whip', 'type': 'grass'}, {'name': 'tackle', 'type': 'normal'}],
+# ivysaur = Pokemon(
+#     name = 'Ivysaur',
+#     element = 'grass',
+#     weakness = 'fire',
+#     attacks = [{'name': 'vine whip', 'type': 'grass'}, {'name': 'tackle', 'type': 'normal'}],
     
-)
+# )
 
-venusaur = Pokemon(
-    name = 'Venusaur',
-    element = 'grass',
-    weakness = 'fire',
-    attacks = [{'name': 'vine whip', 'type': 'grass'}, {'name': 'tackle', 'type': 'normal'}],
+# venusaur = Pokemon(
+#     name = 'Venusaur',
+#     element = 'grass',
+#     weakness = 'fire',
+#     attacks = [{'name': 'vine whip', 'type': 'grass'}, {'name': 'tackle', 'type': 'normal'}],
     
-)
+# )
 
-wartortle = Pokemon(
-    name = 'Wartortle',
-    element = 'water',
-    weakness = 'grass',
-    attacks = [{'name': 'water gun', 'type': 'water'}, {'name': 'tackle', 'type': 'normal'}],
+# wartortle = Pokemon(
+#     name = 'Wartortle',
+#     element = 'water',
+#     weakness = 'grass',
+#     attacks = [{'name': 'water gun', 'type': 'water'}, {'name': 'tackle', 'type': 'normal'}],
     
-)
+# )
 
-blastoise = Pokemon(
-    name = 'Blastoise',
-    element = 'water',
-    weakness = 'grass',
-    attacks = [{'name': 'water gun', 'type': 'water'}, {'name': 'tackle', 'type': 'normal'}],
+# blastoise = Pokemon(
+#     name = 'Blastoise',
+#     element = 'water',
+#     weakness = 'grass',
+#     attacks = [{'name': 'water gun', 'type': 'water'}, {'name': 'tackle', 'type': 'normal'}],
     
-)
+# )
 
-charmeleon = Pokemon(
-    name = 'Charmeleon',
-    element = 'fire',
-    weakness = 'water',
-    attacks = [{'name': 'ember', 'type': 'fire'}, {'name': 'tackle', 'type': 'normal'}],
+# charmeleon = Pokemon(
+#     name = 'Charmeleon',
+#     element = 'fire',
+#     weakness = 'water',
+#     attacks = [{'name': 'ember', 'type': 'fire'}, {'name': 'tackle', 'type': 'normal'}],
     
-)
+# )
 
-ponyta = Pokemon(
-    name = 'Ponyta',
-    element = 'fire',
-    weakness = 'water',
-    attacks = [{'name': 'ember', 'type': 'fire'}, {'name': 'tackle', 'type': 'normal'}],
+# ponyta = Pokemon(
+#     name = 'Ponyta',
+#     element = 'fire',
+#     weakness = 'water',
+#     attacks = [{'name': 'ember', 'type': 'fire'}, {'name': 'tackle', 'type': 'normal'}],
     
-)
+# )
 
-wild_pokemons = [charmander, squirtle, bulbasaur, flareon, vaporeon, leafeon, ivysaur, venusaur, wartortle, blastoise, charmeleon, ponyta]
-
-
-#print('These pokemon are still wild:', wild_pokemons)
-#print(player.pokedex)
-
-
-
-# def display_pokedex():
-#     print(f"\n {player}'s pokedex:")
-#     print(Trainer.pokedex)
+#The list of pokemon, which are all wild at the start of the game
+wild_pokemons = [charmander, squirtle] 
+# bulbasaur, flareon, vaporeon, leafeon, ivysaur, venusaur, wartortle, blastoise, charmeleon, ponyta] 
 
 
 def find_pokemon(your_poke_input: str) -> Pokemon:
@@ -134,47 +126,39 @@ def find_pokemon(your_poke_input: str) -> Pokemon:
             return pokemon
 
 
-# the fight
+# the battle between two pokemon
 
 def battle():
     winner = None
     opponent = random.choice(wild_pokemons)
-    #damage = 0
     def choose_battle_poke():
         print("Which pokemon do you want to use? ")
         for pokemon in player.pokedex:
             print(pokemon.name)
-        # your_poke = (input('> '))
-        # your_poke = find_pokemon(your_poke)
-        # return your_poke
-        # print(f"Go get 'em {your_poke.name}! ")
 
     def main_menu():
-        action_taken = input("\n What would you like to do? "
-            "\n - Catch Pokemon"
-            "\n - Quit"
-            "\n > ")
-        # action = None
-        # while action_taken is None:
-        if 'catch' in action_taken.lower():
-            action = 'catch'
-            # opponent = random.choice(wild_pokemons)
-            print(f"You've encountered a wild {opponent.name}!")
-            # opponent = main_menu()
-        elif action_taken.lower() == "quit":
-            print(f"Thanks for playing, {player.name}!")
-            action = 'quit'
-            sys.exit()
-        elif action_taken.lower() != "quit" and action_taken.lower() != "catch":
-            print('Please respond with one of the options below:')
-            # action = action_taken
-            main_menu()
+        nonlocal winner
+        if winner is None:
+            action_taken = input("\n What would you like to do? "
+                "\n - Catch Pokemon"
+                "\n - Quit"
+                "\n > ")
+            
+            if 'catch' in action_taken.lower():
+                action = 'catch'
+                print(f"You've encountered a wild {opponent.name}!")
+            elif action_taken.lower() == "quit":
+                print(f"Thanks for playing, {player.name}!")
+                action = 'quit'
+                sys.exit()
+            elif action_taken.lower() != "quit" and action_taken.lower() != "catch":
+                print('Please respond with one of the options below:')
+                main_menu()
+        else:
+            pass
 
-    # opponent = main_menu()
-    # if choose_battle_poke(catch):
-    #     players_pokemon = choose_battle_poke()
+    #battle functions 
 
-    #the battle functions 
     def battle_action_taken():
         battle_action = input("\n Battle Menu: "
         "\n - Fight"
@@ -238,24 +222,21 @@ def battle():
                     pokemon_health = 0
                 print(f"{opponent.name} attacked you! {players_pokemon.name}'s health is now {pokemon_health}.")
                 turn = players_pokemon
-                # input
             
                 if opponent_health == 0:              
                     winner = players_pokemon.name
                 elif pokemon_health == 0:
                     winner = opponent.name
-                print(f"The winner is {winner}!")
+                if winner is not None:
+                    print(f"The winner is {winner}!")
         main_menu()
             
-        
 
         if winner == players_pokemon.name:
             opponent.health = 10 
             players_pokemon.health = 10
             player.pokedex.append(wild_pokemons.pop(wild_pokemons.index(opponent)))
             print(f"You caught {opponent.name}! ")
-            # for pokemon in player.pokedex:
-            #     print(pokemon.name)
 
         elif winner == opponent.name:
             opponent.health = 10 
@@ -263,44 +244,38 @@ def battle():
             wild_pokemons.append(player.pokedex.pop(player.pokedex.index(players_pokemon)))
 
 
-
-    #run the battle 
+    #call the functions of the battle 
     choose_battle_poke()
     your_poke_input = (input('> '))
     your_poke = find_pokemon(your_poke_input)
-    print(f"Go get 'em {your_poke.name}! ")
+    print(f"Go get 'em {your_poke.name}! "
+    "\n")
     players_pokemon = your_poke
     main_menu()
     print('\n What would you like to do? ')
     battle_action_taken()
-    # main_menu()
+  
     
 
-
-
-
-#the game 
+#the game where the battle function is called
 name = input("What is your name? ")
 player = Trainer(name)
 
+#how to choose a pokemon from the wild pokemons list
 index = int(input("Choose a random pokemon by selecting a number 0 through 12: "))
 pokemon = wild_pokemons.pop(index)
 player.add_pokemon(pokemon)
 for pokemon in player.pokedex:
-    print(pokemon.name)
-while len(Trainer.pokedex) != 12 or len(Trainer.pokedex) == 0:
-    if len(Trainer.pokedex) == 12:
-        print("Way to go! You caught all the pokemon. You win! ")
+    print(f'You chose {pokemon.name}! '
+    '\n')
+
+#How to identify when the game is over 
+while True:
+    if len(player.pokedex) == 2:
+        print(f"Way to go! You caught all the pokemon. You win! Thanks for playing, {player.name}")
         sys.exit()
-    elif len(Trainer.pokedex) == 0:
+    elif len(player.pokedex) == 0:
         print("Oh no, you lost all your pokemon. Game over... ")
         sys.exit()
     else:
         battle()
-
-
-
-
-
-# make pokemon list a dictionary 
-# take out functions that aren't used in 

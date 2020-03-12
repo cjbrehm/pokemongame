@@ -35,90 +35,80 @@ squirtle = Pokemon(
     attacks = [{'name': 'water gun', 'type': 'water'}, {'name': 'tackle', 'type': 'normal'}],
 )
 
-# bulbasaur = Pokemon(
-#     name = 'Bulbasaur',
-#     element = 'grass',
-#     weakness = 'fire',
-#     attacks = [{'name': 'vine whip', 'type': 'grass'}, {'name': 'tackle', 'type': 'normal'}],   
-# )
+bulbasaur = Pokemon(
+    name = 'Bulbasaur',
+    element = 'grass',
+    weakness = 'fire',
+    attacks = [{'name': 'vine whip', 'type': 'grass'}, {'name': 'tackle', 'type': 'normal'}],   
+)
 
-# flareon = Pokemon(
-#     name = 'Flareon',
-#     element = 'fire',
-#     weakness = 'water',
-#     attacks = [{'name': 'ember', 'type': 'fire'}, {'name': 'tackle', 'type': 'normal'}],
-    
-# )
+flareon = Pokemon(
+    name = 'Flareon',
+    element = 'fire',
+    weakness = 'water',
+    attacks = [{'name': 'ember', 'type': 'fire'}, {'name': 'tackle', 'type': 'normal'}], 
+)
 
-# vaporeon = Pokemon(
-#     name = 'Vaporeon',
-#     element = 'water',
-#     weakness = 'grass',
-#     attacks = [{'name': 'water gun', 'type': 'water'}, {'name': 'tackle', 'type': 'normal'}],
-    
-# )
+vaporeon = Pokemon(
+    name = 'Vaporeon',
+    element = 'water',
+    weakness = 'grass',
+    attacks = [{'name': 'water gun', 'type': 'water'}, {'name': 'tackle', 'type': 'normal'}],
+)
 
-# leafeon = Pokemon(
-#     name = 'Leafeon',
-#     element = 'grass',
-#     weakness = 'fire',
-#     attacks = [{'name': 'vine whip', 'type': 'grass'}, {'name': 'tackle', 'type': 'normal'}],
-    
-# )
+leafeon = Pokemon(
+    name = 'Leafeon',
+    element = 'grass',
+    weakness = 'fire',
+    attacks = [{'name': 'vine whip', 'type': 'grass'}, {'name': 'tackle', 'type': 'normal'}], 
+)
 
-# ivysaur = Pokemon(
-#     name = 'Ivysaur',
-#     element = 'grass',
-#     weakness = 'fire',
-#     attacks = [{'name': 'vine whip', 'type': 'grass'}, {'name': 'tackle', 'type': 'normal'}],
-    
-# )
+ivysaur = Pokemon(
+    name = 'Ivysaur',
+    element = 'grass',
+    weakness = 'fire',
+    attacks = [{'name': 'vine whip', 'type': 'grass'}, {'name': 'tackle', 'type': 'normal'}], 
+)
 
-# venusaur = Pokemon(
-#     name = 'Venusaur',
-#     element = 'grass',
-#     weakness = 'fire',
-#     attacks = [{'name': 'vine whip', 'type': 'grass'}, {'name': 'tackle', 'type': 'normal'}],
-    
-# )
+venusaur = Pokemon(
+    name = 'Venusaur',
+    element = 'grass',
+    weakness = 'fire',
+    attacks = [{'name': 'vine whip', 'type': 'grass'}, {'name': 'tackle', 'type': 'normal'}],
+)
 
-# wartortle = Pokemon(
-#     name = 'Wartortle',
-#     element = 'water',
-#     weakness = 'grass',
-#     attacks = [{'name': 'water gun', 'type': 'water'}, {'name': 'tackle', 'type': 'normal'}],
-    
-# )
+wartortle = Pokemon(
+    name = 'Wartortle',
+    element = 'water',
+    weakness = 'grass',
+    attacks = [{'name': 'water gun', 'type': 'water'}, {'name': 'tackle', 'type': 'normal'}], 
+)
 
-# blastoise = Pokemon(
-#     name = 'Blastoise',
-#     element = 'water',
-#     weakness = 'grass',
-#     attacks = [{'name': 'water gun', 'type': 'water'}, {'name': 'tackle', 'type': 'normal'}],
-    
-# )
+blastoise = Pokemon(
+    name = 'Blastoise',
+    element = 'water',
+    weakness = 'grass',
+    attacks = [{'name': 'water gun', 'type': 'water'}, {'name': 'tackle', 'type': 'normal'}],   
+)
 
-# charmeleon = Pokemon(
-#     name = 'Charmeleon',
-#     element = 'fire',
-#     weakness = 'water',
-#     attacks = [{'name': 'ember', 'type': 'fire'}, {'name': 'tackle', 'type': 'normal'}],
-    
-# )
+charmeleon = Pokemon(
+    name = 'Charmeleon',
+    element = 'fire',
+    weakness = 'water',
+    attacks = [{'name': 'ember', 'type': 'fire'}, {'name': 'tackle', 'type': 'normal'}],  
+)
 
-# ponyta = Pokemon(
-#     name = 'Ponyta',
-#     element = 'fire',
-#     weakness = 'water',
-#     attacks = [{'name': 'ember', 'type': 'fire'}, {'name': 'tackle', 'type': 'normal'}],
-    
-# )
+ponyta = Pokemon(
+    name = 'Ponyta',
+    element = 'fire',
+    weakness = 'water',
+    attacks = [{'name': 'ember', 'type': 'fire'}, {'name': 'tackle', 'type': 'normal'}],  
+)
 
 #The list of pokemon, which are all wild at the start of the game
-wild_pokemons = [charmander, squirtle] 
-# bulbasaur, flareon, vaporeon, leafeon, ivysaur, venusaur, wartortle, blastoise, charmeleon, ponyta] 
+wild_pokemons = [charmander, squirtle, bulbasaur, flareon, vaporeon, leafeon, ivysaur, venusaur, wartortle, blastoise, charmeleon, ponyta]
 
-
+#allows the chosen pokemon to be found by the game as the input is a string not a number
 def find_pokemon(your_poke_input: str) -> Pokemon:
     print(your_poke_input)
     for pokemon in player.pokedex:
@@ -271,7 +261,7 @@ for pokemon in player.pokedex:
 
 #How to identify when the game is over 
 while True:
-    if len(player.pokedex) == 2:
+    if len(player.pokedex) == 12:
         print(f"Way to go! You caught all the pokemon. You win! Thanks for playing, {player.name}")
         sys.exit()
     elif len(player.pokedex) == 0:
